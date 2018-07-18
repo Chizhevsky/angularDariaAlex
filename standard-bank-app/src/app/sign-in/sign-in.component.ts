@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent  {
-
+  type= "password";
+  show = false;
+  toggleShow()
+  {
+    this.show = !this.show;
+    if (this.show){
+      this.type = "text";
+    }
+    else {
+      this.type = "password";
+    }
+  }
 }

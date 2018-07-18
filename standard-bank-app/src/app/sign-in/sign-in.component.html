@@ -3,19 +3,28 @@
 </div>
 
 <mat-card class="column">
-  <h1 class="mat-title">Hello!</h1>
+  <h1 class="mat-headline">Sign in</h1>
   <form >
     <mat-form-field>
-      <input matInput placeholder="Username" value="Sushi">
+      <input matInput placeholder="Username" value="Consultant@standardbank.co.za">
     </mat-form-field>
     <br>
     <mat-form-field>
-      <input matInput placeholder="Password" value="Sushi">
+      <div class="container">
+      <input type="{{type}}" matInput placeholder="Password" value="passwordpass">
+      <span class="show" (click)="toggleShow()">
+        Show
+      </span>
+      </div>
     </mat-form-field>
+
   </form>
-    <button mat-raised-button>Sign in</button>
-  <div><a>Forgot your passport?</a></div>
+    <button mat-raised-button class="mat-primary">Sign in</button>
+
+  <a href="#" class="blue">Forgot your password?</a>
 </mat-card>
+
+
 
 
 

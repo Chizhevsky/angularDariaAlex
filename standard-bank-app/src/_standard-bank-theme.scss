@@ -2,7 +2,7 @@
 @include mat-core();
 
 $standard-bank-primary: mat-palette($mat-grey);
-$standard-bank-accent:  mat-palette($mat-pink, A700);
+$standard-bank-accent:  mat-palette($mat-grey, 800);
 $standard-bank-warn:  mat-palette($mat-gray, A200, A100, A400);
 $standard-bank-theme:   mat-light-theme($standard-bank-primary, $standard-bank-accent, $standard-bank-warn);
 
