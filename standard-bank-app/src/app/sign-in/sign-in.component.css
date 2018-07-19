@@ -36,6 +36,7 @@
  .show {
    font-size: 9pt;
    text-transform: uppercase;
+   cursor: pointer;
  }
 
  .blue{
