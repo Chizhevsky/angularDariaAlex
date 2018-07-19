@@ -1,0 +1,10 @@
+@import '../node_modules/@angular/material/theming';
+@include mat-core();
+
+$standard-bank-primary: mat-palette($mat-grey);
+$standard-bank-accent:  mat-palette($mat-grey, 800);
+$standard-bank-warn:  mat-palette($mat-gray, A200, A100, A400);
+$standard-bank-theme:   mat-light-theme($standard-bank-primary, $standard-bank-accent, $standard-bank-warn);
+
+
+@include angular-material-theme($standard-bank-theme)
