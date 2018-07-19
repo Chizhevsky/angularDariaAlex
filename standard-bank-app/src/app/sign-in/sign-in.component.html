@@ -4,22 +4,22 @@
 
 <mat-card class="column">
   <h1 class="mat-headline">Sign in</h1>
-  <form >
+  <form>
     <mat-form-field>
       <input matInput placeholder="Username">
     </mat-form-field>
     <br>
     <mat-form-field>
       <div class="container">
-      <input [type]="type" matInput placeholder="Password">
-      <span class="show" (click)="toggleShow()">
-      {{show ? 'hide' : 'show'}}
-      </span>
+        <input [type]="type" matInput placeholder="Password">
+        <span class="show" (click)="toggleShow()">
+          {{show ? 'hide' : 'show'}}
+        </span>
       </div>
     </mat-form-field>
 
   </form>
-    <button mat-raised-button class="mat-primary">Sign in</button>
+  <button mat-raised-button class="mat-primary">Sign in</button>
 
   <a href="#" class="blue">Forgot your password?</a>
 </mat-card>
