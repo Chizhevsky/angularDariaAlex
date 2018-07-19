@@ -1,19 +1,19 @@
 <div class="accent">
-  <img src="../../assets/icon/standard_bank_logo.ico">
+  <img [src]="imageSrc">
 </div>
 
 <mat-card class="column">
   <h1 class="mat-headline">Sign in</h1>
   <form >
     <mat-form-field>
-      <input matInput placeholder="Username" value="Consultant@standardbank.co.za">
+      <input matInput placeholder="Username">
     </mat-form-field>
     <br>
     <mat-form-field>
       <div class="container">
-      <input type="{{type}}" matInput placeholder="Password" value="passwordpass">
+      <input [type]="type" matInput placeholder="Password">
       <span class="show" (click)="toggleShow()">
-        Show
+      {{show ? 'hide' : 'show'}}
       </span>
       </div>
     </mat-form-field>
