@@ -1,18 +1,14 @@
-
 .accent{
   display: flex;
   height: 200px;
   justify-content: center;
   align-items: center;
 }
-
-
 .accent > img {
   width: 50px;
   height: 60px;
   margin-top: 2vh;
 }
-
 .column{
   display: flex;
   flex-direction: column;
@@ -26,20 +22,17 @@
  .column > form, mat-form-field, button{
    width: 100%;
  }
-
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
  .show {
    font-size: 9pt;
    text-transform: uppercase;
    cursor: pointer;
  }
-
  .blue{
- color: #4fc3f7;
+   color: #4fc3f7;
    text-decoration: none;
  }
