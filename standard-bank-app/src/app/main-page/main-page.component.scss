@@ -27,8 +27,14 @@ button.mat-icon-button{
   justify-content: center;
 }
 .column{
+  margin-top: 10%;
   align-items: center;
   flex-direction: column;
+}
+.column > h2{
+  font-weight: 200;
+  font-size: 30px;
+  color: #6e6f6f;
 }
 .search{
   width: 60%;
@@ -36,7 +42,19 @@ button.mat-icon-button{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 0;
+}
+.input{
+  border:none;
+  width: 100%;
+  margin: 20px 10px;
+  font-size:14pt;
+}
+.input:focus{
+  outline:none;
+}
+input::placeholder {
+  color: #e8e8e8;
 }
 .mat-card>:first-child{
   margin-left: 15px;
@@ -61,6 +79,7 @@ button.mat-icon-button{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 2%;
 }
 .option{
   background: white;
@@ -68,5 +87,7 @@ button.mat-icon-button{
   width: 250px;
   height: 150px;
   margin: 10px;
+  color: #000c17;
+  font-weight: bold;
 }
 
