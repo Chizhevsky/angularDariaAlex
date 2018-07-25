@@ -1,0 +1,40 @@
+<div class="staff-container">
+
+  <div class="question-title">
+    <h2>{{question.title}}</h2>
+  </div>
+
+  <section class="question-row">
+    <div *ngFor="let answer of answers">
+      <mat-card
+        class="card"
+        [class.single]="question.type===0"
+        (click)="onClick(answer.id)"
+      >
+
+        <mat-card-content>
+          <p>
+            {{answer.description}}
+          </p>
+        </mat-card-content>
+
+        <mat-checkbox color="primary"
+                      class="checkbox-position"
+                      *ngIf="question.type==1"
+                      [(ngModel)]="answer.isChecked">
+        </mat-checkbox>
+
+        <mat-card-actions *ngIf="question.type==2">
+          <button mat-button (click)="onActionClick(answer.id)">{{answer.action}}</button>
+        </mat-card-actions>
+
+      </mat-card>
+    </div>
+  </section>
+  <button mat-raised-button color="primary"
+          class="next-button"
+          *ngIf="question.type==1"
+          (click)="onNext()"
+          [disabled]="buttonState()"
+  >Next</button>
+</div>
