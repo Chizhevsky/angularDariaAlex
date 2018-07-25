@@ -4,9 +4,21 @@
   margin: 0;
 }
 body{
-    background: linear-gradient(#303f9f 35%, #f7f7f7 0);
-    background-size: 100vh 100vh;
-    font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
-
-
+.accent{
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.accent > img {
+  width: 50px;
+  height: 60px;
+  margin-top: 2vh;
+}
+.center{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}

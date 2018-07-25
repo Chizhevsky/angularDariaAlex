@@ -4,7 +4,7 @@ export enum Types{
   action
 }
 
-export interface Question {
+export interface QuestionInterface {
   title: string;
   id: number;
   type?: Types;

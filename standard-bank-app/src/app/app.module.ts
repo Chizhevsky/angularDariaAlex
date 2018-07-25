@@ -8,16 +8,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainPageComponent } from './main-page/main-page.component';
 
 import { RouterModule, Routes } from "@angular/router";
+import { GetAccountComponent } from './get-account/get-account.component';
+import { QuestionCardsComponent } from './question-cards/question-cards.component';
+import { QuestionCardsContainerComponent } from './question-cards-container/question-cards-container.component';
 
 const routes: Routes = [
   { path: '', component: SignInComponent},
   { path: 'home', component: MainPageComponent},
+  { path: 'account', component: GetAccountComponent},
 ];
 @NgModule({
   declarations: [
     AppComponent,
     SignInComponent,
-    MainPageComponent
+    MainPageComponent,
+    GetAccountComponent,
+    QuestionCardsComponent,
+    QuestionCardsContainerComponent
   ],
   imports: [
     BrowserModule,
