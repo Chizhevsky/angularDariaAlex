@@ -1,0 +1,52 @@
+.flex{
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.card{
+  max-height: 380px;
+  max-width: 450px;
+}
+.grow{
+  flex-grow: 4;
+}
+.spacer{
+  flex: 1 0 auto;
+}
+.mat-display-1 {
+  margin: 0;
+}
+.divider{
+  margin: 20px 0;
+  width: 10%;
+  border: 2px solid #221f79;
+}
+.fee-value-container{
+  height: 28px;
+  margin: 10px 0;
+}
+.fee-currency{
+  font-size: 14pt;
+  margin-right: 5px;
+  align-self: flex-start;
+}
+.fee-value{
+  font-size: 30pt;
+  align-self: flex-end;
+  text-transform: uppercase;
+}
+.fee-label{
+  text-transform: uppercase;
+  font-size: 8pt;
+  margin-bottom: 80px;
+}
+.right-aside{
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+
+
+
+

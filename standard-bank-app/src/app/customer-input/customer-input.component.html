@@ -1,0 +1,70 @@
+<app-menu></app-menu>
+<div class="flex customer-input">
+  <div class="flex grey-block grow">
+    <mat-icon color="accent" class="example-icon">arrow_back</mat-icon>
+    <div class="promo-text">
+      <h1 class="mat-display-3 white-text">Life happens.</h1>
+      <h1 class="mat-display-3 white-text">Get a hassle-free loan here.</h1>
+    </div>
+  </div>
+  <div class="flex grow white-block">
+    <h2>About you</h2>
+    <form class="example-form" #form="ngForm">
+
+      <table class="example-full-width"><tr>
+        <td><mat-form-field class="example-full-width">
+          <input matInput placeholder="First name">
+        </mat-form-field></td>
+        <td><mat-form-field class="example-full-width">
+          <input matInput placeholder="Surname">
+        </mat-form-field></td>
+      </tr></table>
+
+      <mat-form-field class="example-full-width">
+        <span matPrefix>R &nbsp;</span>
+        <input matInput placeholder="Monthly income after tax" >
+      </mat-form-field>
+
+      <!--<mat-form-field class="example-full-width">-->
+        <!--<input matInput placeholder="Email" [formControl]="income">-->
+        <!--<mat-error  *ngIf="income.hasError('email') && !income.hasError('required')">-->
+          <!--Please enter a valid email address-->
+        <!--</mat-error>-->
+        <!--<mat-error *ngIf="income.hasError('required')">-->
+          <!--Email is <strong>required</strong>-->
+        <!--</mat-error>-->
+        <!--<mat-error *ngIf="income.hasError('forbiddenId')">-->
+          <!--Email is forbidden-->
+        <!--</mat-error>-->
+      <!--</mat-form-field>-->
+
+      <mat-form-field class="example-full-width">
+        <span matPrefix>R &nbsp;</span>
+        <input matInput placeholder="Monthly expenses" >
+        <mat-hint align="end">
+          <p class="right-aside">Help me do my expenses</p>
+        </mat-hint>
+      </mat-form-field>
+      <div class="flex checkbox-position">
+        <mat-checkbox color="primary"
+                      [checked]="isChecked"
+                      (change)="onChange()"
+                      [required]="true">
+
+        </mat-checkbox>
+        <span class="label-style">The customer confirms that he/she is not under debt counselling, debt review (current or applied for), administration or sequestration. The customer also confirms that he/she is not insolvent nor has committed an act of insolvency. </span>
+      </div>
+      <div class="flex checkbox-position">
+        <mat-checkbox color="primary"></mat-checkbox>
+        <span class="label-style">The customer consents to Standard Bank of SA Ltd. processing his/her personal information where lawful and reasonable in order to provide him/her with the product/ service - this may include his/her personal information for credit, fraud check and compliance purpose. </span>
+      </div>
+      <button mat-raised-button
+
+              color="primary"
+              type="submit"
+              class="example-full-width">
+        SHOW
+      </button>
+    </form>
+  </div>
+</div>

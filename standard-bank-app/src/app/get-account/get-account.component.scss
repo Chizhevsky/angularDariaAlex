@@ -1,0 +1,59 @@
+.example-icon {
+  padding: 0 14px;
+  font-size: 24px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.blue-search{
+  background: #1a237e;
+  height: 60%;
+  width: 70%;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+.small{
+  font-size: 20px;
+}
+.input{
+  border:none;
+  background: none;
+  width: 100%;
+  color: #e8e8e8;
+}
+.input:focus{
+  outline:none;
+}
+.no-padding{
+  padding: 10px 0 5px 15px;
+}
+.column{
+  flex-direction: column;
+  align-items: center;
+}
+.thin{
+  font-weight: 100;
+}
+.confirm-button{
+  width: 16%;
+  text-transform: uppercase;
+}
+.account{
+  height: 50vh;
+  background: gray;
+  align-content: flex-end;
+}
+.flex{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 260px;
+  border-radius: 7px;
+  margin: 20px;
+}

@@ -3,7 +3,7 @@ import { AnswerInterface } from "../models/Answer.interface";
 import { QuestionInterface, Types} from "../models/Question.Interface";
 
 @Component({
-  selector: 'app-options',
+  selector: 'app-question-cards-container',
   templateUrl: './question-cards-container.component.html',
   styleUrls: ['./question-cards-container.component.scss']
 })

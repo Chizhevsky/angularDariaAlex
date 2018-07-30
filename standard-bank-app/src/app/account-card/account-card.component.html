@@ -1,0 +1,33 @@
+<mat-card class="flex column card">
+  <mat-card-title class="mat-display-1">
+    {{account.title}}
+  </mat-card-title>
+  <hr class="divider">
+
+    <p>
+     {{account.body}}
+    </p>
+
+  <mat-card-content class="flex">
+    <div class="flex column grow">
+      <div class="flex fee-value-container">
+        <div class="fee-currency">R</div>
+        <div class="fee-value">{{account.monthly_fee}}</div>
+      </div>
+    <div class="fee-label">{{account.payment_type}}</div>
+      <span class="spacer"></span>
+    <button mat-raised-button color="primary">GET ACCOUNT</button>
+    </div>
+    <span class="spacer"></span>
+    <div class="flex column grow">
+      <div class="flex fee-value-container">
+        <!--<div class="fee-currency">R</div>-->
+        <div class="fee-value">{{account.monthly_income}}</div>
+      </div>
+      <div class="fee-label">{{account.income_type}}</div>
+      <mat-checkbox color="primary" class="right-aside" *ngIf="account.type"> Add to compare</mat-checkbox>
+      <button mat-stroked-button color="primary" class="grow">GET ESTIMATE</button>
+    </div>
+  </mat-card-content>
+
+</mat-card>
